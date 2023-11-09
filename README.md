@@ -16,3 +16,6 @@ POST: curl -X POST -H "Content-Type: application/json" -d '{
 
 
 O mesmo pode ser feito através do cocumentos
+
+
+Para compilar o código pode-se utilizar ides de desenvolvimento, no maeu caso, foi utilizado o Intellij.
