@@ -2,9 +2,17 @@ package pldesaude.CadastroDeBeneficiario.entity;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 public class Beneficiario {
+
+    @OneToMany(mappedBy = "beneficiario", cascade = CascadeType.ALL)
+    private List<Documento> documentos;
+
+    public List<Documento> getDocumentos() {
+        return documentos;
+    }
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
